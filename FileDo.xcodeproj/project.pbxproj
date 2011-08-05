@@ -21,12 +21,12 @@
 		8066FCAA13ECB0E9005EA98F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		8066FCAB13ECB0E9005EA98F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8066FCAC13ECB0E9005EA98F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		8066FCAF13ECB0E9005EA98F /* FileDo-Info.plist */ = {isa = PBXFileReference; path = "FileDo-Info.plist"; sourceTree = "<group>"; };
+		8066FCAF13ECB0E9005EA98F /* FileDo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FileDo-Info.plist"; sourceTree = "<group>"; };
 		8066FCB113ECB0E9005EA98F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8066FCB313ECB0E9005EA98F /* FileDo-Prefix.pch */ = {isa = PBXFileReference; path = "FileDo-Prefix.pch"; sourceTree = "<group>"; };
+		8066FCB313ECB0E9005EA98F /* FileDo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FileDo-Prefix.pch"; sourceTree = "<group>"; };
 		8066FCB413ECB0E9005EA98F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8066FCB713ECB0E9005EA98F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		8066FCB913ECB0E9005EA98F /* FileDoAppDelegate.h */ = {isa = PBXFileReference; path = FileDoAppDelegate.h; sourceTree = "<group>"; };
+		8066FCB913ECB0E9005EA98F /* FileDoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileDoAppDelegate.h; sourceTree = "<group>"; };
 		8066FCBA13ECB0E9005EA98F /* FileDoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileDoAppDelegate.m; sourceTree = "<group>"; };
 		8066FCBD13ECB0E9005EA98F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
