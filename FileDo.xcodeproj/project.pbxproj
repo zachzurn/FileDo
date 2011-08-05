@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8066FCA813ECB0E9005EA98F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8066FCA713ECB0E9005EA98F /* Cocoa.framework */; };
+		8066FCB213ECB0E9005EA98F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8066FCB013ECB0E9005EA98F /* InfoPlist.strings */; };
+		8066FCB513ECB0E9005EA98F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8066FCB413ECB0E9005EA98F /* main.m */; };
+		8066FCB813ECB0E9005EA98F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8066FCB613ECB0E9005EA98F /* Credits.rtf */; };
+		8066FCBB13ECB0E9005EA98F /* FileDoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8066FCBA13ECB0E9005EA98F /* FileDoAppDelegate.m */; };
+		8066FCBE13ECB0E9005EA98F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8066FCBC13ECB0E9005EA98F /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8066FCA313ECB0E9005EA98F /* FileDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8066FCA713ECB0E9005EA98F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8066FCAA13ECB0E9005EA98F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		8066FCAB13ECB0E9005EA98F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8066FCAC13ECB0E9005EA98F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8066FCAF13ECB0E9005EA98F /* FileDo-Info.plist */ = {isa = PBXFileReference; path = "FileDo-Info.plist"; sourceTree = "<group>"; };
+		8066FCB113ECB0E9005EA98F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8066FCB313ECB0E9005EA98F /* FileDo-Prefix.pch */ = {isa = PBXFileReference; path = "FileDo-Prefix.pch"; sourceTree = "<group>"; };
+		8066FCB413ECB0E9005EA98F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8066FCB713ECB0E9005EA98F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		8066FCB913ECB0E9005EA98F /* FileDoAppDelegate.h */ = {isa = PBXFileReference; path = FileDoAppDelegate.h; sourceTree = "<group>"; };
+		8066FCBA13ECB0E9005EA98F /* FileDoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileDoAppDelegate.m; sourceTree = "<group>"; };
+		8066FCBD13ECB0E9005EA98F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8066FCA013ECB0E9005EA98F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8066FCA813ECB0E9005EA98F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8066FC9813ECB0E9005EA98F = {
+			isa = PBXGroup;
+			children = (
+				8066FCAD13ECB0E9005EA98F /* FileDo */,
+				8066FCA613ECB0E9005EA98F /* Frameworks */,
+				8066FCA413ECB0E9005EA98F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8066FCA413ECB0E9005EA98F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8066FCA313ECB0E9005EA98F /* FileDo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8066FCA613ECB0E9005EA98F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8066FCA713ECB0E9005EA98F /* Cocoa.framework */,
+				8066FCA913ECB0E9005EA98F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8066FCA913ECB0E9005EA98F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8066FCAA13ECB0E9005EA98F /* AppKit.framework */,
+				8066FCAB13ECB0E9005EA98F /* CoreData.framework */,
+				8066FCAC13ECB0E9005EA98F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		8066FCAD13ECB0E9005EA98F /* FileDo */ = {
+			isa = PBXGroup;
+			children = (
+				8066FCB913ECB0E9005EA98F /* FileDoAppDelegate.h */,
+				8066FCBA13ECB0E9005EA98F /* FileDoAppDelegate.m */,
+				8066FCBC13ECB0E9005EA98F /* MainMenu.xib */,
+				8066FCAE13ECB0E9005EA98F /* Supporting Files */,
+			);
+			path = FileDo;
+			sourceTree = "<group>";
+		};
+		8066FCAE13ECB0E9005EA98F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8066FCAF13ECB0E9005EA98F /* FileDo-Info.plist */,
+				8066FCB013ECB0E9005EA98F /* InfoPlist.strings */,
+				8066FCB313ECB0E9005EA98F /* FileDo-Prefix.pch */,
+				8066FCB413ECB0E9005EA98F /* main.m */,
+				8066FCB613ECB0E9005EA98F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8066FCA213ECB0E9005EA98F /* FileDo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8066FCC113ECB0E9005EA98F /* Build configuration list for PBXNativeTarget "FileDo" */;
+			buildPhases = (
+				8066FC9F13ECB0E9005EA98F /* Sources */,
+				8066FCA013ECB0E9005EA98F /* Frameworks */,
+				8066FCA113ECB0E9005EA98F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FileDo;
+			productName = FileDo;
+			productReference = 8066FCA313ECB0E9005EA98F /* FileDo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8066FC9A13ECB0E9005EA98F /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 8066FC9D13ECB0E9005EA98F /* Build configuration list for PBXProject "FileDo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8066FC9813ECB0E9005EA98F;
+			productRefGroup = 8066FCA413ECB0E9005EA98F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8066FCA213ECB0E9005EA98F /* FileDo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8066FCA113ECB0E9005EA98F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8066FCB213ECB0E9005EA98F /* InfoPlist.strings in Resources */,
+				8066FCB813ECB0E9005EA98F /* Credits.rtf in Resources */,
+				8066FCBE13ECB0E9005EA98F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8066FC9F13ECB0E9005EA98F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8066FCB513ECB0E9005EA98F /* main.m in Sources */,
+				8066FCBB13ECB0E9005EA98F /* FileDoAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8066FCB013ECB0E9005EA98F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8066FCB113ECB0E9005EA98F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8066FCB613ECB0E9005EA98F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8066FCB713ECB0E9005EA98F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		8066FCBC13ECB0E9005EA98F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8066FCBD13ECB0E9005EA98F /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8066FCBF13ECB0E9005EA98F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8066FCC013ECB0E9005EA98F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8066FCC213ECB0E9005EA98F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FileDo/FileDo-Prefix.pch";
+				INFOPLIST_FILE = "FileDo/FileDo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8066FCC313ECB0E9005EA98F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FileDo/FileDo-Prefix.pch";
+				INFOPLIST_FILE = "FileDo/FileDo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8066FC9D13ECB0E9005EA98F /* Build configuration list for PBXProject "FileDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8066FCBF13ECB0E9005EA98F /* Debug */,
+				8066FCC013ECB0E9005EA98F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8066FCC113ECB0E9005EA98F /* Build configuration list for PBXNativeTarget "FileDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8066FCC213ECB0E9005EA98F /* Debug */,
+				8066FCC313ECB0E9005EA98F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8066FC9A13ECB0E9005EA98F /* Project object */;
+}

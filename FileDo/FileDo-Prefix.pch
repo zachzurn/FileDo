@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'FileDo' target in the 'FileDo' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
