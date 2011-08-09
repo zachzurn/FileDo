@@ -7,10 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "FileDoMainWindow.h"
 
 @interface FileDoAppDelegate : NSObject <NSApplicationDelegate> {
 @private
-    NSWindow *window;
+    FileDoMainWindow *window;
 }
 
 @property (assign) IBOutlet NSWindow *window;
