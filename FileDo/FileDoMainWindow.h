@@ -17,7 +17,6 @@
 
 @property (nonatomic,retain) IBOutlet NSTableView *filesTable;
 
-
 -(IBAction)runActions:(id)sender;
 -(IBAction)clearList:(id)sender;
 -(void)setup;

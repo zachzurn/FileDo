@@ -40,7 +40,8 @@
     _newFilePaths = [[NSMutableArray alloc] init];
     [filesTable setDataSource:self];
     
-    [self setBackgroundColor:[NSColor colorWithDeviceRed: 172.0 green:172.0 blue:172.0 alpha:1]];
+    [self setBackgroundColor:[NSColor blackColor]];
+    
 }
 
 #pragma mark - IBActions
@@ -76,13 +77,23 @@
 
 -(id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
-    if([tableColumn identifier] == @"new")
+    NSLog(@"%@",[tableColumn identifier]);
+    
+    if([[tableColumn identifier] isEqualToString:@"original"])
     {
         return [_filePaths objectAtIndex:row];
     }
-    else
+    else if([[tableColumn identifier] isEqualToString:@"icon"])
+    {
+        return [[NSWorkspace sharedWorkspace] iconForFile:[_filePaths objectAtIndex:row]];
+    }
+    else if([[tableColumn identifier] isEqualToString:@"new"])
     {
         return [_newFilePaths objectAtIndex:row];        
+    }
+    else
+    {
+        return nil;
     }
 }
 
