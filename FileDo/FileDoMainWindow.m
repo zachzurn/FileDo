@@ -13,7 +13,7 @@
 
 @implementation FileDoMainWindow
 
-@synthesize filesTable;
+@synthesize filesTable, introText, introActionsText;
 
 - (id)init
 {
@@ -58,6 +58,45 @@
     [filesTable reloadData];
 }
 
+-(IBAction)addFilesToList:(id)sender
+{
+    int i;
+    
+    NSOpenPanel *openDialog = [NSOpenPanel openPanel];
+    
+    [openDialog setCanChooseFiles:YES];
+    [openDialog setCanChooseDirectories:YES];
+    
+    if([openDialog runModalForDirectory:nil file:nil] == NSOKButton)
+    {
+        NSArray *files = [openDialog filenames];
+        
+        for(i = 0; i < [files count]; i++)
+        {
+            NSString *filePath = [files objectAtIndex:i];
+            
+            //Do stuff
+        }
+    }
+}
+
+-(IBAction)removeSelectedFilesFromList:(id)sender
+{
+    NSIndexSet *selectedRows = [filesTable selectedRowIndexes];
+    
+    NSUInteger rowCount = [_filePaths count];
+    
+    //Remove items in the selection index
+    for(int i = 0; i < rowCount; i++)
+    {
+        if([selectedRows containsIndex:i])
+        {
+            [_filePaths removeObjectAtIndex:i];
+            [_newFilePaths removeObjectAtIndex:i];
+        }
+    }
+}
+
 
 #pragma mark - File path operations
 -(void)updateNewFilePaths
@@ -72,7 +111,20 @@
 #pragma mark - Files Table
 -(NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
 {
-    return [_filePaths count];
+    NSUInteger rowCount = [_filePaths count];
+    
+    if(rowCount != 0)
+    {
+        [introText setAlphaValue:0.0];
+        [introActionsText setAlphaValue:1.0];
+    }
+    else 
+    {    
+        [introText setAlphaValue:1.0];
+        [introActionsText setAlphaValue:0.0];
+    }
+    
+    return rowCount;
 }
 
 -(id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
