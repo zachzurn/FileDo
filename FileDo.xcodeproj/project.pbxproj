@@ -15,6 +15,12 @@
 		8066FCB813ECB0E9005EA98F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8066FCB613ECB0E9005EA98F /* Credits.rtf */; };
 		8066FCBB13ECB0E9005EA98F /* FileDoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8066FCBA13ECB0E9005EA98F /* FileDoAppDelegate.m */; };
 		8066FCBE13ECB0E9005EA98F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8066FCBC13ECB0E9005EA98F /* MainMenu.xib */; };
+		80AEDECB13F4953B0055B16C /* action-panel.png in Resources */ = {isa = PBXBuildFile; fileRef = 80AEDECA13F4953B0055B16C /* action-panel.png */; };
+		80AEDECD13F4956C0055B16C /* FindReplaceAction.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80AEDECC13F4956C0055B16C /* FindReplaceAction.xib */; };
+		80AEDED413F49A260055B16C /* FindReplaceAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AEDED213F49A260055B16C /* FindReplaceAction.m */; };
+		80AEDEDA13F49F6A0055B16C /* ActionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AEDED813F49F690055B16C /* ActionsViewController.m */; };
+		80AEDEDF13F4A4760055B16C /* NumericSequenceAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 80AEDEDD13F4A4760055B16C /* NumericSequenceAction.m */; };
+		80AEDEE013F4A4760055B16C /* NumericSequenceAction.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80AEDEDE13F4A4760055B16C /* NumericSequenceAction.xib */; };
 		80D5D66713F2F8F000E95592 /* add-up.png in Resources */ = {isa = PBXBuildFile; fileRef = 80D5D66513F2F8F000E95592 /* add-up.png */; };
 		80D5D66813F2F8F000E95592 /* remove-up.png in Resources */ = {isa = PBXBuildFile; fileRef = 80D5D66613F2F8F000E95592 /* remove-up.png */; };
 		80DFCD0E13F19EA400E1EA9A /* bottom-bar-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 80DFCD0D13F19EA400E1EA9A /* bottom-bar-bg.png */; };
@@ -38,6 +44,16 @@
 		8066FCB913ECB0E9005EA98F /* FileDoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileDoAppDelegate.h; sourceTree = "<group>"; };
 		8066FCBA13ECB0E9005EA98F /* FileDoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileDoAppDelegate.m; sourceTree = "<group>"; };
 		8066FCBD13ECB0E9005EA98F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		80AEDECA13F4953B0055B16C /* action-panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-panel.png"; sourceTree = "<group>"; };
+		80AEDECC13F4956C0055B16C /* FindReplaceAction.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindReplaceAction.xib; sourceTree = "<group>"; };
+		80AEDED113F49A260055B16C /* FindReplaceAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindReplaceAction.h; sourceTree = "<group>"; };
+		80AEDED213F49A260055B16C /* FindReplaceAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindReplaceAction.m; sourceTree = "<group>"; };
+		80AEDED613F49E460055B16C /* Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Action.h; sourceTree = "<group>"; };
+		80AEDED713F49F690055B16C /* ActionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionsViewController.h; sourceTree = "<group>"; };
+		80AEDED813F49F690055B16C /* ActionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionsViewController.m; sourceTree = "<group>"; };
+		80AEDEDC13F4A4750055B16C /* NumericSequenceAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumericSequenceAction.h; sourceTree = "<group>"; };
+		80AEDEDD13F4A4760055B16C /* NumericSequenceAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumericSequenceAction.m; sourceTree = "<group>"; };
+		80AEDEDE13F4A4760055B16C /* NumericSequenceAction.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumericSequenceAction.xib; sourceTree = "<group>"; };
 		80D5D66513F2F8F000E95592 /* add-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add-up.png"; sourceTree = "<group>"; };
 		80D5D66613F2F8F000E95592 /* remove-up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "remove-up.png"; sourceTree = "<group>"; };
 		80DFCD0D13F19EA400E1EA9A /* bottom-bar-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bottom-bar-bg.png"; sourceTree = "<group>"; };
@@ -79,6 +95,8 @@
 				8066FCBC13ECB0E9005EA98F /* MainMenu.xib */,
 				8045064D13F0620C008EB368 /* FileDoMainWindow.h */,
 				8045064E13F0620C008EB368 /* FileDoMainWindow.m */,
+				80AEDED713F49F690055B16C /* ActionsViewController.h */,
+				80AEDED813F49F690055B16C /* ActionsViewController.m */,
 			);
 			name = MainWindow;
 			sourceTree = "<group>";
@@ -86,6 +104,7 @@
 		8045066D13F19BA2008EB368 /* interface */ = {
 			isa = PBXGroup;
 			children = (
+				80AEDECA13F4953B0055B16C /* action-panel.png */,
 				80D5D66513F2F8F000E95592 /* add-up.png */,
 				80D5D66613F2F8F000E95592 /* remove-up.png */,
 				80DFCD2F13F1E91500E1EA9A /* top-nav-bg.png */,
@@ -134,6 +153,8 @@
 		8066FCAD13ECB0E9005EA98F /* FileDo */ = {
 			isa = PBXGroup;
 			children = (
+				80AEDEC913F495310055B16C /* Actions */,
+				80AEDE9F13F47CD70055B16C /* lib */,
 				8045066D13F19BA2008EB368 /* interface */,
 				8045066413F0BA3E008EB368 /* MainWindow */,
 				8045066313F0BA28008EB368 /* Bootstrapper */,
@@ -153,6 +174,28 @@
 				8066FCB613ECB0E9005EA98F /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		80AEDE9F13F47CD70055B16C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = lib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		80AEDEC913F495310055B16C /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				80AEDECC13F4956C0055B16C /* FindReplaceAction.xib */,
+				80AEDED113F49A260055B16C /* FindReplaceAction.h */,
+				80AEDED213F49A260055B16C /* FindReplaceAction.m */,
+				80AEDED613F49E460055B16C /* Action.h */,
+				80AEDEDC13F4A4750055B16C /* NumericSequenceAction.h */,
+				80AEDEDD13F4A4760055B16C /* NumericSequenceAction.m */,
+				80AEDEDE13F4A4760055B16C /* NumericSequenceAction.xib */,
+			);
+			name = Actions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +253,9 @@
 				80DFCD3013F1E91500E1EA9A /* top-nav-bg.png in Resources */,
 				80D5D66713F2F8F000E95592 /* add-up.png in Resources */,
 				80D5D66813F2F8F000E95592 /* remove-up.png in Resources */,
+				80AEDECB13F4953B0055B16C /* action-panel.png in Resources */,
+				80AEDECD13F4956C0055B16C /* FindReplaceAction.xib in Resources */,
+				80AEDEE013F4A4760055B16C /* NumericSequenceAction.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +270,9 @@
 				8066FCBB13ECB0E9005EA98F /* FileDoAppDelegate.m in Sources */,
 				8045064F13F0620C008EB368 /* FileDoMainWindow.h in Sources */,
 				8045065013F0620C008EB368 /* FileDoMainWindow.m in Sources */,
+				80AEDED413F49A260055B16C /* FindReplaceAction.m in Sources */,
+				80AEDEDA13F49F6A0055B16C /* ActionsViewController.m in Sources */,
+				80AEDEDF13F4A4760055B16C /* NumericSequenceAction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

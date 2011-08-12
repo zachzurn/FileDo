@@ -18,6 +18,7 @@
 @property (nonatomic,retain) IBOutlet NSTableView *filesTable;
 @property (nonatomic,retain) IBOutlet NSTextField  *introText;
 @property (nonatomic,retain) IBOutlet NSTextField  *introActionsText;
+@property (nonatomic,retain) IBOutlet NSViewController  *actionsViewController;
 
 -(IBAction)runActions:(id)sender;
 -(IBAction)clearList:(id)sender;

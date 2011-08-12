@@ -13,7 +13,7 @@
 
 @implementation FileDoMainWindow
 
-@synthesize filesTable, introText, introActionsText;
+@synthesize filesTable, introText, introActionsText,actionsViewController;
 
 - (id)init
 {
@@ -44,6 +44,12 @@
     
 }
 
+-(BOOL)addFileToList:(NSString*)theFilePath
+{
+    [_filePaths addObject:theFilePath]; 
+    return YES;
+}
+
 #pragma mark - IBActions
 -(IBAction)runActions:(id)sender
 {
@@ -66,6 +72,7 @@
     
     [openDialog setCanChooseFiles:YES];
     [openDialog setCanChooseDirectories:YES];
+    [openDialog setAllowsMultipleSelection:YES];
     
     if([openDialog runModalForDirectory:nil file:nil] == NSOKButton)
     {
@@ -74,9 +81,10 @@
         for(i = 0; i < [files count]; i++)
         {
             NSString *filePath = [files objectAtIndex:i];
-            
-            //Do stuff
+            [self addFileToList:filePath];
         }
+        
+        [self updateNewFilePaths];
     }
 }
 
@@ -95,6 +103,8 @@
             [_newFilePaths removeObjectAtIndex:i];
         }
     }
+    
+    [self updateNewFilePaths];
 }
 
 
@@ -129,8 +139,6 @@
 
 -(id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
-    NSLog(@"%@",[tableColumn identifier]);
-    
     if([[tableColumn identifier] isEqualToString:@"original"])
     {
         return [_filePaths objectAtIndex:row];
@@ -181,7 +189,7 @@
     
     for(int i = 0; i < [items count]; i++)
     {
-        [_filePaths addObject:[items objectAtIndex:i]]; 
+        [self addFileToList:[items objectAtIndex:i]];
     }
     
     [self updateNewFilePaths];
